@@ -9,9 +9,10 @@ class Program
             Console.Clear();
             Console.WriteLine("Select an option:");
             Console.WriteLine("1. Grade Calculator");
-            Console.WriteLine("2. Exit");
+            Console.WriteLine("2. Ticket Price Calculator");
+            Console.WriteLine("3. Exit");
 
-            Console.Write("\nEnter your choice (1-2): ");
+            Console.Write("\nEnter your choice (1-3): ");
             string choice = Console.ReadLine();
 
             switch (choice)
@@ -20,6 +21,9 @@ class Program
                     GradeCalculator.Run();
                     break;
                 case "2":
+                    TicketPriceCalculator.Run();
+                    break;
+                case "3":
                     Console.WriteLine("Exiting program...");
                     return;
                 default:
