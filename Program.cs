@@ -10,11 +10,11 @@ class Program
             Console.WriteLine("Select an option:");
             Console.WriteLine("1. Grade Calculator");
             Console.WriteLine("2. Ticket Price Calculator");
-            Console.WriteLine("3. Exit");
+            Console.WriteLine("3. Triangle Type Identifier");
+            Console.WriteLine("4. Exit");
 
-            Console.Write("\nEnter your choice (1-3): ");
-            string choice = Console.ReadLine();
-
+            Console.Write("\nEnter your choice (1-4): ");
+            string? choice = Console.ReadLine();
             switch (choice)
             {
                 case "1":
@@ -24,6 +24,9 @@ class Program
                     TicketPriceCalculator.Run();
                     break;
                 case "3":
+                    TriangleTypeIdentifier.Run();
+                    break;
+                case "4":
                     Console.WriteLine("Exiting program...");
                     return;
                 default:
